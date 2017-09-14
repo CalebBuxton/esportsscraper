@@ -40,6 +40,8 @@ router.get('/', function(req, res){
 });
 
 router.get('/scrape', function(req, res){
+	console.log("request: " + req)
+	console.log("response: " + res)
     request(url, function(error, response, html) {	
         var $ = cheerio.load(html);
 		var result = [];
