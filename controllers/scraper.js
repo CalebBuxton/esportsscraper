@@ -19,7 +19,7 @@ router.get('/test', function(req, res) {
 		var result = [];
 		$(".NewsCard__container--1KkQS").each(function(i, element) {
 			var title = $(element).find("a").find(".NewsCard__bodyContainer--1h9Eb").find(".NewsCard__title--37vMp").text();
-			var storyLink = $(element).find("a").attr("href");
+			var storyLink = "www.thescoreesports.com" + $(element).find("a").attr("href");
 			var imgLink = $(element).find("a").find(".NewsCard__featureImage--2wnda").find("img").attr("src");
 			var summary = $(element).find("a").find(".NewsCard__bodyContainer--1h9Eb").find(".NewsCard__content--1VLID").text();
 			summary = summary.replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
@@ -45,7 +45,7 @@ router.get('/scrape', function(req, res){
 		var result = [];
 		$(".NewsCard__container--1KkQS").each(function(i, element) {
 			var title = $(element).find("a").find(".NewsCard__bodyContainer--1h9Eb").find(".NewsCard__title--37vMp").text();
-			var storyLink = $(element).find("a").attr("href");
+			var storyLink = "www.thescoreesports.com" + $(element).find("a").attr("href");
 			var imgLink = $(element).find("a").find(".NewsCard__featureImage--2wnda").find("img").attr("src");
 			var summary = $(element).find("a").find(".NewsCard__bodyContainer--1h9Eb").find(".NewsCard__content--1VLID").text();
 			summary = summary.replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
