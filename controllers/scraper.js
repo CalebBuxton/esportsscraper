@@ -36,7 +36,7 @@ router.get('/test', function(req, res) {
 });
 
 router.get('/', function(req, res){
-	res.render('index');
+	res.render('home');
 });
 
 router.get('/scrape', function(req, res){
