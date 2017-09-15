@@ -1,0 +1,47 @@
+body {
+	background: #505050;
+	font-family: 'Roboto';
+}
+
+.panel-default>.panel-heading {
+	padding: 20px 0;
+	background-color: #cc5500;
+}
+
+.panel-title {
+	font-family: 'Roboto';
+	padding-left: 10px;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 24px;
+	color: white;
+}
+
+.panel-heading {
+	border-radius: 4px;
+}
+
+.panel {
+	background: #E0E0E0;
+
+}
+#getArticlesBtn {
+	text-align: center;
+}
+
+.jumbotron {
+	width: 100%;
+	background: url(../imgs/header.jpg) no-repeat center;
+	background-size: cover;
+/*	    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -o-filter: blur(4px);
+    filter: blur(4px);*/
+}
+
+.jumbotron h1 {
+	font-family: 'Audiowide';
+	color: white;
+	text-shadow: 6px 6px 2px rgba(0,0,0,0.8);
+}
