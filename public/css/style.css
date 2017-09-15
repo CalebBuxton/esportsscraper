@@ -50,6 +50,9 @@ body {
 
 #image {
 	float: left;
+	max-width: 200px;
+	margin: 5px;
+	border: 2px solid white;
 }
 
 #summary {
