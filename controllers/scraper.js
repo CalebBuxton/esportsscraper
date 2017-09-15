@@ -24,10 +24,10 @@ router.get('/test', function(req, res) {
 			var summary = $(element).find("a").find(".NewsCard__bodyContainer--1h9Eb").find(".NewsCard__content--1VLID").text();
 			summary = summary.replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
 			result.push({ 
-				Title: title,
-				Story: storyLink,
-				Link: imgLink,
-				Summary: summary
+				title: title,
+				storyLink: storyLink,
+				imgLink: imgLink,
+				summary: summary
 			});
 		});
 		console.log(result);
@@ -52,10 +52,10 @@ router.get('/scrape', function(req, res){
 			var summary = $(element).find("a").find(".NewsCard__bodyContainer--1h9Eb").find(".NewsCard__content--1VLID").text();
 			summary = summary.replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
 			result.push({ 
-				Title: title,
-				Story: storyLink,
-				Link: imgLink,
-				Summary: summary
+				title: title,
+				storyLink: storyLink,
+				imgLink: imgLink,
+				summary: summary
 			});
 			Articles.findOne({'title': title}, function(err, articleRecord) {
 				if(err) {
