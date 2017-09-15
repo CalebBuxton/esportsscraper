@@ -31,14 +31,13 @@ body {
 
 .jumbotron {
 	width: 100%;
-	height
 	background: url(../imgs/header.jpg) no-repeat center;
 	background-size: cover;
-/*	    -webkit-filter: blur(4px);
+	-webkit-filter: blur(4px);
     -moz-filter: blur(4px);
     -ms-filter: blur(4px);
     -o-filter: blur(4px);
-    filter: blur(4px);*/
+    filter: blur(4px);
     margin-bottom: 0;
     margin-top: 30px;
     padding-bottom: 0;
